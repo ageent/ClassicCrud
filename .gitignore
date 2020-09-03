@@ -1,4 +1,5 @@
-#/pom.xml
-pom.xml
-/pom.xml
-\pom.xml
+/.mvn
+/.idea
+/ClassicCrud.iml
+/mvnw
+/mvnw.cmd
