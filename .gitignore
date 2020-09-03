@@ -1,4 +1,1 @@
-target/
-/.mvn/
-/.idea/
-/.idea/workspace.xml
+/pom.xml

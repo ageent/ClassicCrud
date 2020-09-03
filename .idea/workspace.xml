@@ -63,7 +63,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1599119536621</updated>
-      <workItem from="1599119545621" duration="2897000" />
+      <workItem from="1599119545621" duration="3604000" />
     </task>
     <servers />
   </component>
@@ -79,6 +79,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="117" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1599119679343" />
+    <state x="505" y="261" key="Github.CreateGistDialog" timestamp="1599123433932">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="505" y="261" key="Github.CreateGistDialog/0.0.1366.728@0.0.1366.728" timestamp="1599123433932" />
     <state x="184" y="0" key="SettingsEditor" timestamp="1599119615437">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
