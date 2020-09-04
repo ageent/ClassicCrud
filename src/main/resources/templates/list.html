@@ -2,13 +2,13 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8"/>
-    <title>List of all persons</title>
-    <link rel="stylesheet" type="text/css" href="/css/listStyle.css">
+    <title>List of all books</title>
+    <link rel="stylesheet" type="text/css" href="/styles/listStyle.css">
 </head>
 <body>
-<h1>Persons:</h1>
+<h1>Books:</h1>
 
-<table class="persons">
+<table class="books">
     <thead>
     <tr>
         <th>ID</th>
@@ -17,11 +17,11 @@
     </tr>
     </thead>
     <tbody>
-    <tr th:each="person : ${persons}">
-        <td th:text="${person.id}">1</td>
-        <td th:text="${person.name}">John Doe</td>
+    <tr th:each="book : ${books}" th:object="${book}">
+        <td th:text="*{id}">1</td>
+        <td th:text="*{authorName}">John Doe</td>
         <td>
-            <a th:href="@{/edit(id=${person.id})}" href="edit.html">Edit</a>
+            <a th:href="@{/edit(id=*{id})}" href="edit.html">Edit</a>
         </td>
     </tr>
     </tbody>
