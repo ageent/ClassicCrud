@@ -3,3 +3,5 @@
 /ClassicCrud.iml
 /mvnw
 /mvnw.cmd
+/target/**
+!/target/classiccrud-0.0.1-SNAPSHOT.jar

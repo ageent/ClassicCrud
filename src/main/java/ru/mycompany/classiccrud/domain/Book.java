@@ -10,13 +10,13 @@ public class Book {
     @Id
     @GeneratedValue
     private int id;
-    private String name;
+    private String authorName;
 
     public Book() {
     }
 
-    public Book(String name) {
-        this.name = name;
+    public Book(String authorName) {
+        this.authorName = authorName;
     }
 
     public int getId() {
@@ -27,11 +27,11 @@ public class Book {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getAuthorName() {
+        return authorName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setAuthorName(String name) {
+        this.authorName = name;
     }
 }
