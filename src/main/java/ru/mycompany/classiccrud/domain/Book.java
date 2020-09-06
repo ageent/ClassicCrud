@@ -19,6 +19,11 @@ public class Book {
         this.authorName = authorName;
     }
 
+    public Book(int id, String authorName) {
+        this.id = id;
+        this.authorName = authorName;
+    }
+
     public int getId() {
         return id;
     }

@@ -3,22 +3,28 @@
 <head>
     <meta charset="UTF-8"/>
     <title>Edit person</title>
-    <link rel="stylesheet" type="text/css" href="/styles/editStyle.css">
+    <link rel="stylesheet" type="text/css"
+          href="../static/styles/editStyle.css"
+          th:href="@{/styles/editStyle.css}">
 </head>
 <body>
 
 <form id="edit-form" th:object="${book}" th:action="@{/edit(id=*{id})}" th:method="post" action="edit.html">
     <h1>Book Info:</h1>
 
+    <input id="id-input" name="id" type="hidden" th:value="*{id}" value="-1"/>
+
     <div class="row">
         <label for="holder-input">Author Name:</label>
-        <input id="holder-input" name="name" type="text" th:value="*{authorName}" value="John Doe"/>
+        <input id="holder-input" name="authorName" type="text" th:value="*{authorName}" value="John Doe"/>
     </div>
 
     <div class="row">
         <button type="submit">Save</button>
     </div>
 </form>
+
+<a class="go-back" href="/">Go back to the list</a>
 
 </body>
 </html>

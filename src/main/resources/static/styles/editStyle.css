@@ -7,10 +7,10 @@ label {
     width: 100px;
 }
 
-input:read-only {
-    background: lightgray;
-}
-
 .row {
     margin-top: 10px;
+}
+
+.go-back {
+    line-height: 3em;
 }

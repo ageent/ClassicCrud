@@ -36,9 +36,9 @@ public class PersonController {
     }
 
     @PostMapping("/edit")
-    public String saveBook(@RequestParam("name") String name) {
-        Book book = new Book(name);
+    public String saveBook(Book book, Model model) {
         repository.save(book);
-        return "list";
+        model.addAttribute("book", book);
+        return "edit";
     }
 }

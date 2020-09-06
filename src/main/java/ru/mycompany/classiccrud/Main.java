@@ -2,9 +2,6 @@ package ru.mycompany.classiccrud;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
-import org.springframework.web.servlet.ViewResolver;
-import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import ru.mycompany.classiccrud.domain.Book;
 import ru.mycompany.classiccrud.repostory.BookRepository;
 
@@ -29,13 +26,4 @@ public class Main {
         repository.save(new Book("Lermontov"));
     }
 
-/*
-    @Bean
-    public ViewResolver viewResolver() {
-        InternalResourceViewResolver resolver = new InternalResourceViewResolver();
-        resolver.setPrefix("/src/main/resources/templates/");
-        resolver.setSuffix(".html");
-        return resolver;
-    }
-*/
 }
